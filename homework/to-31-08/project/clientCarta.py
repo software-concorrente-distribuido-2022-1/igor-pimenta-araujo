@@ -1,0 +1,18 @@
+import xmlrpc.client
+
+s = xmlrpc.client.ServerProxy('http://localhost:8000')
+print(s.carta(1, 1))
+print(s.carta(2, 2))
+print(s.carta(3, 3))
+print(s.carta(4, 4))
+print(s.carta(5, 1))
+print(s.carta(6, 2))
+print(s.carta(7, 3))
+print(s.carta(8, 4))
+print(s.carta(9, 1))
+print(s.carta(10, 2))
+print(s.carta(11, 3))
+print(s.carta(12, 4))
+print(s.carta(13, 1))
+print(s.carta(14, 2))
+print(s.carta(2, 5))
