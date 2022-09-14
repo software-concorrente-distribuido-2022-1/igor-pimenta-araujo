@@ -1,4 +1,5 @@
 import zmq
+import time
 
 context = zmq.Context()
 
@@ -9,6 +10,7 @@ socket.connect("tcp://localhost:5555")
 
 #  Do 10 requests, waiting each time for a response
 for request in range(10):
+    time.sleep(1)
     print("Sending request %s …" % request)
     socket.send_string("Producer")
 
